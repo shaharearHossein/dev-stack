@@ -26,7 +26,7 @@ function Hero() {
         <div className="hero-art">
           <div className="art-glow"></div>
           <img
-            src="/assets/dev-stack-visual.webp"
+            src="/assets/banner-stack.png"
             alt="Futuristic developer technology stack illustration"
           />
         </div>
