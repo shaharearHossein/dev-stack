@@ -1,8 +1,8 @@
-# 🚀 Dev Stack
+# Dev Stack
 
-A dark, modern developer technology stack builder inspired by the provided DevStack Penpot design. Users can explore curated technologies, add them to a personal stack, remove individual items, and clear the entire stack.
+Dev Stack is a dark, modern technology stack builder inspired by the provided DevStack Penpot design. It allows users to explore curated developer technologies, add their favorite technologies to a personal stack, remove individual items, and clear the entire stack with ease. The project is fully responsive and provides an interactive experience for building a personalized technology stack.
 
-## 🛠️ Technologies
+## Technologies
 
 - React.js
 - JavaScript (ES6+)
@@ -11,47 +11,16 @@ A dark, modern developer technology stack builder inspired by the provided DevSt
 - JSON
 - React-Toastify
 
-## ✨ 3 Main Features
+## 3 Main Features
 
-1. **Technology Stack Builder** — Browse technology cards and add technologies to Your Stack without duplicates.
-2. **Responsive Penpot-inspired UI** — Dark interface, orange → pink → violet gradient, 3-column desktop cards, responsive tablet/mobile layouts, and centered mobile branding.
-3. **Interactive Feedback** — React-Toastify alerts for add, duplicate, remove, and remove-all actions, plus a loading state while JSON data is fetched.
+১. Technology Stack Builder — প্রযুক্তির কার্ডগুলো ব্রাউজ করে কোনো প্রযুক্তি ডুপ্লিকেট ছাড়াই Your Stack-এ যোগ করা যাবে।
 
-## 📂 Project Structure
+২. Responsive Penpot-inspired UI — ডার্ক ইন্টারফেস, কমলা → গোলাপি → বেগুনি গ্রেডিয়েন্ট, ডেস্কটপে ৩-কলামের কার্ড এবং ট্যাবলেট/মোবাইলে responsive layout। মোবাইলে ব্র্যান্ডিং মাঝখানে থাকবে।
 
-```text
-dev-stack/
-├── public/
-│   ├── assets/
-│   │   └── dev-stack-visual.webp
-│   └── data/
-│       └── technologies.json
-├── src/
-│   ├── components/
-│   │   ├── Footer.jsx
-│   │   ├── Hero.jsx
-│   │   ├── Navbar.jsx
-│   │   ├── TechnologyCard.jsx
-│   │   └── YourStack.jsx
-│   ├── App.jsx
-│   ├── index.css
-│   └── main.jsx
-├── .gitignore
-├── index.html
-├── package.json
-└── vite.config.js
-```
+৩. Interactive Feedback — প্রযুক্তি যোগ, ডুপ্লিকেট যোগের চেষ্টা, রিমুভ এবং Remove All-এর জন্য React-Toastify alert ব্যবহার করা হয়েছে। JSON data load হওয়ার সময় loading state-ও দেখানো হয়েছে।
 
-## ▶️ Run Locally
 
-```bash
-npm install
-npm run dev
-```
-
-Open the Local URL shown by Vite, for example `http://localhost:5173/`.
-
-## 📘 React Questions
+## React Questions
 
 ### 1. What is JSX, and why is it used in React?
 
@@ -63,29 +32,30 @@ Props are data passed from a parent to a child. State is data managed inside a c
 
 ### 3. What does the `useState` hook do, and where did you use it?
 
-`useState` stores changing data in a component. I used it for the technology list, selected stack, and mobile navbar menu.
+useState stores changing data in a component. I used it for the technology list, selected stack, and mobile navbar menu.
 
 ### 4. What does the `useEffect` hook do, and why did you need it?
 
-`useEffect` runs side effects after rendering. I used it to fetch the technology JSON file when the app loads.
+useEffect runs side effects after rendering. I used it to fetch the technology JSON file when the app loads.
 
 ### 5. Why does every `.map()` item need a unique `key` prop?
 
-React uses the key to identify each list item efficiently when the list changes. In this project, the technology `id` is used as the key.
+React uses the key to identify each list item efficiently when the list changes. In this project, the technology id is used as the key.
 
 ### 6. What is conditional rendering?
 
-Conditional rendering means showing different UI based on a condition. For example, Your Stack shows an empty message when `stack.length === 0`; otherwise it shows the selected items.
+Conditional rendering means showing different UI based on a condition. For example, Your Stack shows an empty message when stack.length === 0; otherwise it shows the selected items.
 
 ### 7. How do you pass data from parent to child, and how does a child send something back?
 
-A parent passes data and functions through props. The child calls the function it received when the user performs an action. In this project, `App` passes `technology` and `onAdd` to `TechnologyCard`.
+A parent passes data and functions through props. The child calls the function it received when the user performs an action. In this project, App  passes technology and onAdd to TechnologyCard.
 
-## 🌿 Git Commit Suggestions
+
+
+##  Git Commit Suggestions
 
 Use at least 8 meaningful commits:
 
-```text
 git add .
 git commit -m "chore: initialize vite react project"
 
